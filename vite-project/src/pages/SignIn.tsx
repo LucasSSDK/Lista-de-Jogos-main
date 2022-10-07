@@ -7,7 +7,7 @@ import {
     FormGroup,
     Button,
     Title
-} from '@styles';
+} from ;
 
 import ICredential from '@interfaces/Credential';
 
