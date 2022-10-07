@@ -43,16 +43,16 @@ const FormGroup = styled.div`
 `;
 
 const Row = styled.div`
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    @media (min-width: 720px) {
-        flex-direction: row;
-    }
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  @media (min-width: 720px) {
+    flex-direction: row;
+  }
 `;
 
 const Col = styled.div`
-    flex: 1;
+  flex: 1;
 `;
 
 export { Button, Header, Title, Subtitle, Container, FormGroup, Row, Col };

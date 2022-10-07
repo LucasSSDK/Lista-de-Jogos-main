@@ -5,22 +5,15 @@ import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 
 function App() {
-
   return (
-    <> 
-        <Routes>
+    <>
+      <Routes>
+        <Route path="/" element={<SignIn />} />
 
-          <Route
-              path="/"
-              element={<SignIn />}
-          />
-
-          <Route path="/registrar"
-              element={<SignUp />}
-          />
-        </Routes>
+        <Route path="/registrar" element={<SignUp />} />
+      </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

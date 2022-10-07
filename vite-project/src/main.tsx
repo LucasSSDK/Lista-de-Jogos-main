@@ -12,8 +12,8 @@ import Mock from './mock';
 Mock.Initialize();
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-	<React.StrictMode>
-		<GlobalStyle />
-		<RouterProvider router={Router} />
-	</React.StrictMode>
-)
+  <React.StrictMode>
+    <GlobalStyle />
+    <RouterProvider router={Router} />
+  </React.StrictMode>,
+);

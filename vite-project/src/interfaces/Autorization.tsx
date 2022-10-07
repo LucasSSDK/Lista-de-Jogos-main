@@ -1,9 +1,9 @@
 interface IUser {
-    id: number | string,
-    fullname: string,
+  id: number | string;
+  fullname: string;
 }
 
 export default interface IAuthorization {
-    token: string,
-    user?: IUser
+  token: string;
+  user?: IUser;
 }
