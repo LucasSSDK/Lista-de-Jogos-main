@@ -2,7 +2,13 @@
   "compilerOptions": {
     "target": "ESNext",
     "useDefineForClassFields": true,
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "allowJs": false,
     "skipLibCheck": true,
     "esModuleInterop": false,
@@ -14,15 +20,38 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
+  
     "jsx": "react-jsx",
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
     "paths": {
-      "@pages/*": ["./src/pages/*"],
-      "@components/*": ["./src/components/*"],
-      "@router/*": ["./src/router/*"],
-    },
+      "@/*": [
+        "./src"
+      ],
+      "@pages/*": [
+        "./src/pages"
+      ],
+      "@styles/*": [
+        "./src/styles"
+      ],
+      "@components/*": [
+        "./src/components"
+      ],
+      "@services/*": [
+        "./src/services"
+      ],
+      "@contexts/*": [
+        "./src/contexts"
+      ],
+      "@interfaces/*": [
+        "./src/interfaces"
+      ],
+    }
   },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": [
+    "src"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
 }
